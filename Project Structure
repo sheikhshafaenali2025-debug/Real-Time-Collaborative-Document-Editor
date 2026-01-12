@@ -1,0 +1,43 @@
+collab/
+├─ .env
+├─ package.json
+├─ prisma/
+│  ├─ schema.prisma
+│  └─ seed.ts
+├─ src/
+│  ├─ app/
+│  │  ├─ layout.tsx
+│  │  ├─ page.tsx
+│  │  ├─ signin/page.tsx
+│  │  ├─ documents/page.tsx
+│  │  ├─ documents/[id]/page.tsx
+│  │  ├─ api/
+│  │  │  ├─ auth/[...nextauth]/route.ts
+│  │  │  ├─ documents/route.ts
+│  │  │  ├─ documents/[id]/route.ts
+│  │  │  ├─ documents/[id]/snapshot/route.ts
+│  │  │  ├─ documents/[id]/comments/route.ts
+│  │  │  ├─ documents/[id]/versions/route.ts
+│  │  │  └─ documents/[id]/restore/[version]/route.ts
+│  ├─ components/
+│  │  ├─ ui/button.tsx
+│  │  ├─ ui/input.tsx
+│  │  ├─ auth/signin-form.tsx
+│  │  ├─ document-card.tsx
+│  │  ├─ editor/Editor.tsx
+│  │  ├─ editor/Toolbar.tsx
+│  │  ├─ editor/PresenceBar.tsx
+│  │  ├─ editor/OfflineBanner.tsx
+│  │  ├─ editor/CommentSidebar.tsx
+│  │  ├─ editor/VersionHistory.tsx
+│  │  ├─ editor/DiffViewerSimple.tsx
+│  │  └─ editor/DiffViewerSideBySide.tsx
+│  ├─ lib/
+│  │  ├─ prisma.ts
+│  │  ├─ auth.ts
+│  │  ├─ docAuth.ts
+│  │  ├─ snapshotText.ts
+│  │  └─ diff.ts
+│  ├─ middleware.ts
+│  └─ styles/globals.css
+└─ ws-server/server.ts
